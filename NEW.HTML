@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Raleway, arial, sans-serif;
+        }
+
+        .class1 {
+            top: 0px;
+            z-index: 1;
+            background-color: rgba(184, 179, 179, 0.178);
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            padding: 20px 55px;
+            color: rgb(22, 22, 22);
+            font-size: larger;
+            font-weight: bolder;
+
+
+        }
+
+        li {
+
+            color: rgb(12, 12, 12);
+            font-size: 11px;
+            font-weight: 400px;
+            list-style: none;
+            display: inline-block;
+            letter-spacing: 2px;
+            padding: 7px 10px;
+
+        }
+
+
+        li:hover {
+            border-bottom: 2px solid blue;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: rgb(196, 190, 190);
+            padding: 5px 10px;
+            margin-right: 20px;
+        }
+
+        .class2 {
+            height: 70vh;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0);
+            background-image: url(desktop-wallpaper-portfolio-background-portfolio-background-portfolio-and-career-portfolio.jpg);
+            background-repeat: none;
+            background-size: cover;
+        }
+
+        .one {
+            height: 10vh;
+            width: 43%;
+            background-color: rgba(4, 48, 85, 0.411);
+            margin: 10% 10%;
+            color: white;
+
+        }
+
+        .two {
+            height: 5vh;
+            width: 43%;
+            background-color: rgba(7, 50, 85, 0.301);
+            margin: -9% 10%;
+            color: white;
+        }
+
+        .title1 {
+            color: black;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            font-weight: bolder;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-align: center;
+            font-family: Raleway, arial, sans-serif;
+            font-size: 15px;
+
+        }
+
+        .container1 {
+            height: 60vh;
+            width: 100%;
+
+        }
+
+        .same {
+            height: 60vh;
+            width: 32.5%;
+            float: left;
+            background-size: cover;
+            background-position: center;
+            margin-left: 9px;
+        }
+
+        .process-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .process-card {
+            position: relative;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .process-card .step-number {
+            position: absolute;
+            top: 53%;
+            left: 52%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: white;
+            background-color: #007bff;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .process-card img {
+            max-width: 110%;
+            height: 32vh;
+            border-radius: 10px;
+            margin-top: 30px;
+            /* Adjusted to give space for the button */
+        }
+
+        .process-card h3 {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .button:hover {
+            color: rgb(15, 90, 230);
+            background-color: #fbfbfc;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .footer .column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+
+        .footer .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00bfff;
+        }
+
+        .footer .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .links ul li {
+            margin: 10px 0;
+        }
+
+        .footer .links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer .links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .recent-blog p {
+            margin: 10px 0;
+        }
+
+        .footer .contact-info p {
+            margin: 10px 0;
+        }
+
+        .footer .subscribe input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .footer .subscribe button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #00bfff;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .footer .subscribe button:hover {
+            background-color: #007acc;
+        }
+
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="class1">
+        <h3>LOGO<span style="color:blue">HERE</span></h3>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>SERVICE</li>
+            <li>BLOG</li>
+            <li>PROTFOLIO</li>
+            <li>FEATURE</li>
+            <li>CONTACT US</li>
+            <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
+        </ul>
+
+    </div>
+    <div class="class2">
+        <div class="one">
+            <p style="font-size: xx-large; padding: 3% 5%;">MUHAMMAD AHMAD JAVAID</p>
+        </div>
+        <div class="two">
+            <p style=" padding: 1% 5%;">Becholar in digital foransic cyber security</p>
+        </div>
+        <button
+            style="margin-top: 10%; margin-left: 10%;padding: 0.5% 2%; font-size: larger; background-color: rgba(234, 240, 245, 0.438);">Learn
+            More</button>
+    </div>
+    <div class="title1">
+        <h1 style="position: relative;">OUR SERVICES</h1>
+        <div style=" margin-top: 40px; border-bottom: 1px solid rgb(24, 23, 23); width: 10%; position: absolute; ">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="same" style="background-image: url(images\ \(1\).jpg);">
+            <div style="height:10vh; width:60%; background-color: rgba(240, 17, 203, 0.233); margin:30% 20%">
+                <p style="color:white; padding:7%; text-align: center; font-size: larger;">LOGO AND BRAND
+                    <br>DEVELOPMENT</p>
+            </div>
+        </div>
+        <div class="same" style="background-image: url(images\ \(2\).jpg);">
+            <div style="height:10vh; width:60%; background-color: rgba(24, 240, 17, 0.233); margin:30% 20%">
+                <p style="color:white; padding:7%; text-align: center; font-size: larger;">WEB DEVELOPMENT</p>
+            </div>
+        </div>
+        <div class="same" style="background-image: url(white-notebook-laptop-smartphone.jpg);">
+            <div style="height:10vh; width:60%; background-color: rgba(20, 20, 20, 0.233); margin:30% 20%">
+                <p style="color:white; padding:7%; text-align: center; font-size: larger;">DESIGN AND PAINT<BR>
+                    MARKETING</p>
+            </div>
+        </div>
+    </div>
+    <div class="title1">
+        <h1 style="position: relative;text-align: center;">OUR PROCESS</h1>
+        <div style=" margin-top: 40px; border-bottom: 1px solid rgb(24, 23, 23); width: 10%; position: absolute; ">
+        </div>
+    </div>
+    <div class="process-container">
+        <!-- Card 1 -->
+        <div class="process-card">
+            <img src="bS.jpg" alt="Research & Brainstorming">
+            <div class="step-number">1</div>
+            <h3 style="margin-top: 20%; font-size: larger;">RESEARCH & BRAINSTORMING</h3>
+        </div>
+        <!-- Card 2 -->
+        <div class="process-card">
+            <img src="cD.jpg" alt="Concepts & Development">
+            <div class="step-number">2</div>
+            <h3 style="margin-top: 20%; font-size: larger;">CONCEPTS & DEVELOPMENT</h3>
+        </div>
+        <!-- Card 3 -->
+        <div class="process-card">
+            <img src="sd.jpg" alt="Sketching & Drafting">
+            <div class="step-number">3</div>
+            <h3 style="margin-top: 20%; font-size: larger;">SKETCHING & DRAFTING</h3>
+        </div>
+        <!-- Card 4 -->
+        <div class="process-card">
+            <img src="ED.jpg" alt="Execution & Digitalisation">
+            <div class="step-number">4</div>
+            <h3 style="margin-top: 20%; font-size: larger;">EXECUTION & DIGITALISATION</h3>
+        </div>
+    </div>
+    <div class="title1">
+        <h1 style="position: relative;">RECENT PROJECT</h1>
+        <div style=" margin-top: 40px; border-bottom: 1px solid rgb(24, 23, 23); width: 10%; position: absolute; ">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="same" style="background-image: url(portrait-boy-reading-library_23-2151008282.avif);">
+        </div>
+        <div class="same" style="background-image: url(white-notebook-laptop-smartphone.jpg);">
+            <div style="height:10vh; width:60%; background-color: rgba(28, 29, 28, 0.233); margin:30% 20%">
+                <p style="color:white; padding:4%; text-align: center; font-size: larger;">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Eaque, commodi?
+                </p>
+            </div>
+        </div>
+        <div class="same" style="background-image: url(painting.webp);"> </div>
+        <button class="button"
+            style="margin:5% 44%; padding: 3px 59px; font-size:larger; font-weight: bolder;  border: 2px solid black;">View
+            Protfolio</button>
+        <div class="footer">
+            <!-- Logo Column -->
+            <div class="column">
+                <div class="logo">LOGO HERE</div>
+                <p>Hints, Tips & News directly to your inbox!</p>
+                <div class="subscribe">
+                    <input type="text" placeholder="Your Email Address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Links Column -->
+            <div class="column links">
+                <h3>More Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Recent Blog Column -->
+            <div class="column recent-blog">
+                <h3>Recent Blog</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><small>July 18,
+                        2024</small></p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><small>July 24,
+                        2024</small></p>
+            </div>
+
+            <!-- Contact Info Column -->
+            <div class="column contact-info">
+                <h3>Contact Info</h3>
+                <p>Phone: +923202520066</p>
+                <p>Email: khokharahmad@gmail.com</p>
+                <p>Address: PO Box 123, shadbagh, Color State</p>
+                <p>Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer copyright">
+            &copy; 2024 Company Name. All rights reserved.
+        </div>
+</body>
+
+</html>
